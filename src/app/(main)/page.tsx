@@ -4,12 +4,12 @@ import { LayoutIcon, LockClosedIcon } from "@radix-ui/react-icons";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center p-4 space-y-8">
+      <div className="flex flex-col items-center justify-center p-4 space-y-8 mt-12">
         <div className="text-center space-y-8 max-w-2xl text-balance">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            You've never made a website this
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+            You&apos;ve never made a website this
             <span className="text-blue-600"> fast before</span>
-            </h1>
+          </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             A meticulously crafted template for your next SaaS application, with
             a modern design and the perfect starting point to build your next

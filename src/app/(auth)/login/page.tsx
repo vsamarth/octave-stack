@@ -3,8 +3,8 @@ import * as Form from "@radix-ui/react-form";
 import Link from "next/link";
 import Image from "next/image";
 
-import appleLogo from "@/assets/icons/apple-logo.svg";
-import googleLogo from "@/assets/icons/google-logo.svg";
+import appleLogo from "@assets/icons/apple-logo.svg";
+import googleLogo from "@assets/icons/google-logo.svg";
 import { signIn } from "@/lib/actions";
 
 export default function Login() {

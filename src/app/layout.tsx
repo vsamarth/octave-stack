@@ -10,6 +10,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Octave Stack",
+  description: "The starting point for your next idea."
 };
 
 export default function RootLayout({
