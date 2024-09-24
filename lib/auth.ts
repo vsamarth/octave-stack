@@ -20,7 +20,7 @@ export type SessionData = {
     name: string;
     email: string;
     email_verified: boolean;
-    picture: string;
+    picture?: string;
   };
 };
 

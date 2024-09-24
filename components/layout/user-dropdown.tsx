@@ -11,7 +11,11 @@ import {
 } from "@/components/shared/dropdown-menu";
 import { SessionData } from "@/lib/auth";
 
-import { Avatar, AvatarImage } from "@/components/shared/avatar";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/shared/avatar";
 
 import Link from "next/link";
 import { signOut } from "@/lib/actions";
@@ -28,6 +32,7 @@ export default function UserDropdown({ session }: UserDropdownProps) {
         <DropdownMenuTrigger className="rounded-full focus-visible:outline-none focus-visible:ring-2 ring-offset-1 ring-ring">
           <Avatar className="size-8">
             <AvatarImage src={session.user.picture} alt={session.user?.name} />
+            <AvatarFallback>{session.user.name[0]}</AvatarFallback>
           </Avatar>
         </DropdownMenuTrigger>
         <DropdownMenuContent collisionPadding={16} align="end" sideOffset={8}>

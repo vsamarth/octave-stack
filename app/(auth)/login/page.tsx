@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import appleLogo from "@/assets/icons/apple-logo.svg";
 import googleLogo from "@/assets/icons/google-logo.svg";
+import { signIn } from "@/lib/actions";
 
 export default function Login() {
   return (
@@ -38,7 +39,7 @@ function Separator() {
 
 function LoginForm() {
   return (
-    <Form.Root className="w-full space-y-8">
+    <Form.Root action={signIn} className="w-full space-y-8">
       <Form.Field name="email" className="flex flex-col gap-2">
         <Form.Label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-zinc-700">
           Email
